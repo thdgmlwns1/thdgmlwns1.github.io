@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="nav">
+              <button id="prev" class="material-icons"><</button>
+              <h2 class="current-date"></h2>
+              <button id="next" class="material-icons">></button>
+            </div>
+          </header>
+          <div class="calendar">
+            <ul class="weeks">
+              <li>일</li>
+              <li>월</li>
+              <li>화</li>
+              <li>수</li>
+              <li>목</li>
+              <li>금</li>
+              <li>토</li>
+            </ul>
+            <ul class="days">
+
+            </ul>
+          </div>
+        </div>
+
+        <div id = "list_add_feed" class="list_overlay">
+          <div class="list_window">
+            <div class="list_title">
+              <div class="list_title_side"></div>
+              <div> 리스트 </div>
+              <div class="list_title_side">
+                <span id="close_list" class="material-icons-outlined">
+                    X
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div>
+      <button class="event_button" onclick="create_pTag();">행사</button>
+      <button class="event_button" onclick="create_pTag2();">특강</button>
+    </div>
+        <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
